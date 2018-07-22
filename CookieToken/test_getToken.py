@@ -29,7 +29,7 @@ class testhzApp(unittest.TestCase):
         print('----------结束了------------')
 
     def test_login(self):
-        self.url = 'http://ylt.gaoxinhealth.com/jzgxp/myinfopatient/login'
+        self.url = 'http://XXXX。XX。XX。XX/jzgxp/myinfopatient/login'
         self.header = {'authorization': 'token=b5871a8b005e4ac79db0d69002f83e6f',
                        'device': 'imei=866146036223745',
                        'Content-Type': 'application/json; charset=UTF-8',
@@ -39,7 +39,7 @@ class testhzApp(unittest.TestCase):
                        'User-Agent': 'okhttp/3.6.0'}
         self.data = {
             "code": "c56d0e9a7ccec67b4ea131655038d604",
-            "phone": "18392328987",
+            "phone": "183923289XX",
             "type": "1"}
         response = requests.post(url=self.url, json=self.data, headers=self.header)
         print(response.status_code)
